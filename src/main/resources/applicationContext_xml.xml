@@ -2,5 +2,25 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="student" class="com.example.demo.initialSpring.xml.Student">
+        <constructor-arg index="0" value="Masoumeh Aslani"/>
+        <constructor-arg index="1">
+            <list>
+                <value>18</value>
+                <value>17</value>
+                <value>19</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="gradeCalculator" class="com.example.demo.initialSpring.xml.GradeCalculator"/>
+
+    <bean id="display" class="com.example.demo.initialSpring.xml.Display">
+        <constructor-arg index="0" name="student" ref="student"/>
+        <constructor-arg index="1" name="gradeCalculator" ref="gradeCalculator"/>
+<!--        <property name="student" ref="student"/>-->
+<!--        <property name="gradeCalculator" ref="gradeCalculator"/>-->
+    </bean>
 
 </beans>

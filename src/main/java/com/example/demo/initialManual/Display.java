@@ -1,10 +1,15 @@
-package com.example.demo.initial;
+package com.example.demo.initialManual;
 
 public class Display {
 
-    private Student student = new Student("Masoumeh Aslani", new int[]{16, 17, 18});
-    private GradeCalculator gradeCalculator = new GradeCalculator();
+    private Student student ;
+    private GradeCalculator gradeCalculator ;
 
+
+    Display(Student student, GradeCalculator gradeCalculator){
+        this.student = student;
+        this.gradeCalculator = gradeCalculator;
+    }
     public void display(){
         System.out.println(gradeCalculator.calculate(student.getMarks()));
     }

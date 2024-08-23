@@ -1,4 +1,4 @@
-package com.example.demo.initial;
+package com.example.demo.initialManual;
 
 public class GradeCalculator {
 

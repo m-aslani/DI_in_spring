@@ -1,11 +1,14 @@
-package com.example.demo.initialManual;
+package com.example.demo.initialSpring.xml;
 
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Application {
     public static void main(String[] args) {
-        Student student = new Student("Masoumeh Aslani", new int[]{16, 17, 18});
-        GradeCalculator gradeCalculator = new GradeCalculator();
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext_xml.xml");
 
-        new Display(student,gradeCalculator).display();
+        Display display = (Display) context.getBean("display");
+        display.display();
     }
 }

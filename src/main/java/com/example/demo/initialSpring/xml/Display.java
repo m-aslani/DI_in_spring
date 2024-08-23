@@ -1,4 +1,4 @@
-package com.example.demo.initialManual;
+package com.example.demo.initialSpring.xml;
 
 public class Display {
 
@@ -13,4 +13,10 @@ public class Display {
     public void display(){
         System.out.println(gradeCalculator.calculate(student.getMarks()));
     }
+
+//    public void setStudent(Student student) {
+//    }
+//
+//    public void setGradeCalculator(GradeCalculator gradeCalculator) {
+//    }
 }

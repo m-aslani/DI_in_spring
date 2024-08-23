@@ -1,5 +1,9 @@
-package com.example.demo.initialManual;
+package com.example.demo.initialSpring.annotation;
 
+
+import org.springframework.stereotype.Service;
+
+@Service
 public class GradeCalculator {
 
     public int calculate(int[] marks) {

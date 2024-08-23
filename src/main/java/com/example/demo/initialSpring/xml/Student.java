@@ -1,4 +1,4 @@
-package com.example.demo.initialManual;
+package com.example.demo.initialSpring.xml;
 
 public class Student {
 
